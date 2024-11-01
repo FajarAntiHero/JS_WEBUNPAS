@@ -150,6 +150,29 @@ console.log(text.endsWith("World!")); // Output: true
 document.getElementById("header").innerHTML =
 "Hello Dolly!";
 
+/*
+Template string adalah fitur di JavaScript yang diperkenalkan dalam ES6, yang memungkinkan kita membuat string yang lebih kompleks dengan sintaks yang lebih ringkas. Dalam konteks HTML, template string sangat berguna untuk:
+    Menyusun elemen HTML dengan dinamis.
+    Menggabungkan variabel dan ekspresi langsung ke dalam string.
+    Mempermudah penulisan string multi-baris.
+*/
+function createCard(title, description) {
+    const cardHTML = `
+      <div class="card">
+        <h2 class="card-title">${title}</h2>
+        <p class="card-description">${description}</p>
+      </div>
+    `;
+  
+    // Menyisipkan HTML di akhir kontainer
+    const container = document.getElementById("card-container");
+    container.insertAdjacentHTML("beforebegin", cardHTML); // Opsi: 'beforeend' (Bagian sebelum akhir dalam Element/id "card-container"), 'afterbegin'(Bagian sesudah Awal dalam Element/id "card-container"), 'beforebegin'(Sebelum awal Element/id "card-container" & berada dalam luar container), 'afterend'(Sesudah akhir Element/id "card-container" & berada diluar container)
+}
+  
+  // Menambah beberapa card menggunakan fungsi yang sama
+createCard("Card 3", "Deskripsi untuk card ketiga.");
+// insertAdjacentHTML() untuk menyisipkan HTML pada posisi tertentu di dalam elemen. Ini bisa bermanfaat jika kita ingin menambahkan elemen di bagian awal, akhir, atau sebelum atau sesudah elemen tertentu.
+
 // Menggabungkan String
 greeting = "Hello";
 nama = "Fajar";
