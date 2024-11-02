@@ -151,7 +151,8 @@ document.getElementById("header").innerHTML =
 "Hello Dolly!";
 
 /*
-Template string adalah fitur di JavaScript yang diperkenalkan dalam ES6, yang memungkinkan kita membuat string yang lebih kompleks dengan sintaks yang lebih ringkas. Dalam konteks HTML, template string sangat berguna untuk:
+Template string adalah fitur di JavaScript yang diperkenalkan dalam ES6, yang memungkinkan kita membuat string yang lebih kompleks dengan sintaks yang lebih ringkas. 
+Dalam konteks HTML, template string sangat berguna untuk:
     Menyusun elemen HTML dengan dinamis.
     Menggabungkan variabel dan ekspresi langsung ke dalam string.
     Mempermudah penulisan string multi-baris.
