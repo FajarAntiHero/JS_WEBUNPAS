@@ -42,3 +42,7 @@ Aturan Penulisan Nama Variabel
     Snake Case: Setiap kata dipisahkan oleh tanda underscore. Contoh: total_value, user_name. Ini kurang umum dalam JavaScript, tapi kadang digunakan untuk konstanta global.
     Kebab Case: Menggunakan tanda hubung untuk memisahkan kata, misalnya total-value. Tidak diizinkan dalam penamaan variabel karena tanda hubung dianggap operator pengurangan.
 */
+
+let firstName = "John"; // Camel case
+const MAX_ATTEMPTS = 5; // Semua huruf besar untuk konstanta
+let isAvailable = true; // Camel case untuk variabel boolean
