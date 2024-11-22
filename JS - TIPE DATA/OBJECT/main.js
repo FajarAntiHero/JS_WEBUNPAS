@@ -48,8 +48,8 @@ const universitas = {
 console.log(universitas.fakultas.nama); // Output: Teknik Informatika
 
 /* 
-===Keyword this==
-this adalah keyword khusus dalam JavaScript yang mengacu pada konteks atau objek yang saat ini sedang digunakan. 
+======================= Keyword this =======================
+"this" adalah keyword khusus dalam JavaScript yang mengacu pada konteks atau objek yang saat ini sedang digunakan. 
 Dalam sebuah objek, this akan mereferensikan objek tersebut. 
 Hal ini sangat berguna ketika kita ingin mengakses properti atau metode lain dalam objek yang sama.
 
@@ -74,7 +74,7 @@ user.updateEmail("fajarmaulana@example.com"); // Output: Email telah diperbarui 
 
 
 /*
-==Keyword delete==
+============================= Keyword delete ==============================
 delete adalah keyword yang digunakan untuk menghapus properti dari sebuah objek. 
 Setelah properti dihapus dengan delete, properti tersebut tidak lagi tersedia di dalam objek.
 */

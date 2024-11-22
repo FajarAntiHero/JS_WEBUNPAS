@@ -16,7 +16,7 @@ let numbers = new Array(1, 2, 3, 4);
 let emptyArray = [];
 let emptyArrayWithConstructor = new Array(5); // Array dengan panjang 5, tapi belum ada isinya
 
-// Akses Elemen Array
+// ===========================Akses Elemen Array===========================
 // Elemen array diakses menggunakan indeks, dimulai dari 0 untuk elemen pertama
 fruits = ["apple", "banana", "orange"];
 console.log(fruits[0]); // Output: "apple"
@@ -25,12 +25,12 @@ console.log(fruits[2]); // Output: "orange"
 //Jika Anda mencoba mengakses indeks di luar panjang array, hasilnya adalah undefined:
 console.log(fruits[3]); // Output: undefined
 
-// Mengubah Elemen Array
+// ==========================Mengubah Elemen Array========================
 // Anda bisa mengubah nilai elemen array dengan menetapkan nilai baru pada indeks tertentu
 fruits[1] = "grape";
 console.log(fruits); // Output: ["apple", "grape", "orange"]
 
-// Menambah Elemen ke Array
+// =========================Menambah Elemen ke Array=====================
 // push() – menambahkan elemen di akhir array.
 fruits.push("mango");
 console.log(fruits); // Output: ["apple", "grape", "orange", "mango"]
@@ -43,7 +43,7 @@ console.log(fruits); // Output: ["strawberry", "apple", "grape", "orange", "mang
 fruits[5] = "kiwi";
 console.log(fruits); // Output: ["strawberry", "apple", "grape", "orange", "mango", "kiwi"]
 
-// Menghapus Elemen dari Array
+// =======================Menghapus Elemen dari Array======================
 // pop() – menghapus elemen terakhir dari array.
 fruits.pop();
 console.log(fruits); // Menghapus "kiwi", Output: ["strawberry", "apple", "grape", "orange", "mango"]
@@ -56,7 +56,7 @@ console.log(fruits); // Menghapus "strawberry", Output: ["apple", "grape", "oran
 fruits.splice(1, 2); // Menghapus 2 elemen mulai dari indeks 1
 console.log(fruits); // Output: ["apple", "mango"]
 
-// Looping pada Array
+// =========================Looping pada Array===========================
 // Anda dapat menggunakan berbagai cara untuk melakukan iterasi atau looping pada elemen array:
 // Menggunakan for loop
 for (let i = 0; i < fruits.length; i++) {
@@ -73,7 +73,7 @@ fruits.forEach(function(fruit) {
     console.log(fruit);
 });
 
-//Array Multidimensi
+//===============================Array Multidimensi=========================
 // Array juga bisa berisi array lainnya, menciptakan struktur array multidimensi (array bersarang).
 let matrix = [
     [1, 2, 3],
@@ -83,13 +83,14 @@ let matrix = [
  
 console.log(matrix[0][1]); // Output: 2 (elemen baris pertama, kolom kedua)
 
-// Properti dan Metode pada Array
+// =================================Properti dan Metode pada Array==========================
+let moreFruits = ["pineapple", "melon"];
+let allFruits = fruits.concat(moreFruits);
+
 // length: Mengembalikan panjang (jumlah elemen) array.
 console.log(fruits.length); // Output: 2
 
 // concat(): Menggabungkan dua atau lebih array.
-let moreFruits = ["pineapple", "melon"];
-let allFruits = fruits.concat(moreFruits);
 console.log(allFruits); // Output: ["apple", "mango", "pineapple", "melon"]
 
 // join(): Menggabungkan elemen array menjadi string.
