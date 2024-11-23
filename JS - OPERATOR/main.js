@@ -23,12 +23,18 @@ let division = a / b;          // 3.3333333333333335
 let modulus = a % b;           // 1
 let exponentiation = a ** b;   // 1000
 
-console.log("Addition:", addition);
-console.log("Subtraction:", subtraction);
-console.log("Multiplication:", multiplication);
-console.log("Division:", division);
-console.log("Modulus:", modulus);
-console.log("Exponentiation:", exponentiation);
+// console.log("Addition:", addition);
+// console.log("Subtraction:", subtraction);
+// console.log("Multiplication:", multiplication);
+// console.log("Division:", division);
+// console.log("Modulus:", modulus);
+// console.log("Exponentiation:", exponentiation);
+
+document.getElementById("1").innerHTML = `Operasi Penjumlahan = ${a} + ${b} = ${addition}`
+document.getElementById("2").innerHTML = `Operasi Pengurangan = ${a} - ${b} = ${subtraction}`
+document.getElementById("3").innerHTML = `Operasi Perkalian = ${a} * ${b} = ${multiplication}`
+document.getElementById("4").innerHTML = `Operasi Pembagian = ${a} / ${b} = ${division}`
+document.getElementById("5").innerHTML = `Operasi Modulus = ${a} % ${b} = ${modulus}`
 
 /*
 2. Operator Penugasan
