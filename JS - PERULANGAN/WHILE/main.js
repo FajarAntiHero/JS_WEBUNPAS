@@ -72,14 +72,15 @@ JavaScript juga memiliki loop do...while, yang mirip dengan while tetapi memilik
     while: Mengevaluasi kondisi di awal sebelum menjalankan blok kode. Jika kondisi bernilai false dari awal, blok kode tidak akan dijalankan sama sekali.
     do...while: Mengevaluasi kondisi di akhir setelah menjalankan blok kode. Ini berarti bahwa blok kode akan dijalankan setidaknya satu kali, meskipun kondisi awalnya false.
 */
-angka = 5;
-while (angka <= 5) {
-  console.log("Ini dari while: " + angka);
-  angka++
-}
+angka = 2;
 
 do {
   console.log("Ini dari do...while: " + angka);
 } while (angka < 3);
 //Pada while, kondisi angka <= 5 langsung diperiksa, dan karena angka bernilai 5, loop dijalankan sekali.
 //Pada do...while, blok kode dijalankan terlebih dahulu sebelum kondisi diperiksa. Maka, walaupun angka < 5 adalah false, pesan tetap tercetak sekali.
+
+while (angka <= 5) {
+  console.log("Ini dari while: " + angka);
+  angka++
+}
