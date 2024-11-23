@@ -10,13 +10,14 @@ kondisi: Ekspresi atau pernyataan yang akan diperiksa sebelum setiap iterasi. Ji
 Blok kode: Bagian ini akan terus dijalankan berulang kali selama kondisi masih bernilai true.
 
 */
-let angka = 1;
 
+let angka = 1;
+console.log("========================================= 1")
 while (angka <= 5) {
   console.log(angka);
   angka++; // Mengubah nilai angka agar perulangan tidak berjalan selamanya
 }
-
+console.log("========================================= 2")
 /*
 Sangat penting untuk memastikan kondisi while pada akhirnya akan menjadi false, atau loop akan berjalan tanpa henti (infinite loop). 
 Misalnya, jika kita lupa menambahkan angka++ dalam contoh di atas, maka loop akan terus mencetak 1 tanpa berhenti. 
@@ -29,6 +30,7 @@ while (angkaAcak !== 7) {
 }
 
 console.log("Berhasil menemukan angka 7!");
+console.log("========================================= 3")
 
 /*
 Penggunaan break dalam while
@@ -45,7 +47,7 @@ while (true) {
     break; // Hentikan loop ketika hitung mencapai 5
   }
 }
-
+console.log("========================================= 4 ")
 /*
 Penggunaan continue dalam while
 continue digunakan untuk melewati iterasi saat ini dan melanjutkan ke iterasi berikutnya. 
@@ -57,12 +59,13 @@ while (angka < 10) {
   angka++;
   
   if (angka === 5) {
+    // console.log("Melewati angka lima")
     continue; // Lewati iterasi ketika angka adalah 5
   }
   
-  console.log(angka);
+  console.log(`Perulangan Ke ${angka}`);
 }
-
+console.log("========================================= 5")
 /*
 Perbedaan while dan do...while
 JavaScript juga memiliki loop do...while, yang mirip dengan while tetapi memiliki perbedaan penting dalam cara evaluasi kondisinya:
@@ -70,13 +73,13 @@ JavaScript juga memiliki loop do...while, yang mirip dengan while tetapi memilik
     do...while: Mengevaluasi kondisi di akhir setelah menjalankan blok kode. Ini berarti bahwa blok kode akan dijalankan setidaknya satu kali, meskipun kondisi awalnya false.
 */
 angka = 5;
-
-while (angka < 5) {
+while (angka <= 5) {
   console.log("Ini dari while: " + angka);
+  angka++
 }
 
 do {
   console.log("Ini dari do...while: " + angka);
-} while (angka < 5);
-//Pada while, kondisi angka < 5 langsung diperiksa, dan karena angka bernilai 5, loop tidak dijalankan sama sekali.
+} while (angka < 3);
+//Pada while, kondisi angka <= 5 langsung diperiksa, dan karena angka bernilai 5, loop dijalankan sekali.
 //Pada do...while, blok kode dijalankan terlebih dahulu sebelum kondisi diperiksa. Maka, walaupun angka < 5 adalah false, pesan tetap tercetak sekali.
