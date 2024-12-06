@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LATIHAN 1 PERULANGAN</title>
+</head>
+<body>
+    <script>
+        // Perulangan Primitiv digunakan berdasar jumlah objek yang akan dilakukan perulangan, setiap perulangan akan menambahkan nilai pada variabel yang dilakukan inisiliasi
+        let buah = ["Apel", "Mangga", "Stroberi", "Jeruk"]
+
+        for (let i = 0; i < buah.length; i++) { 
+            // let i = 0 -> inisiliasi variabel perulangan. 
+            // i < buah.length -> kondisi perulangan akan berjalan jika nilai i kurang dari nilai dari panjang buah.
+            // i++ -> setiap perulangan akan menambahkan satu nilai pada i, ini dilakukan untuk menghindari forever loop dan error
+            console.log("=======================================");
+            console.log(buah[i]);
+        }
+
+        let a, b, c, d
+        let baris = [a, b, c, d]
+
+        for (let i = 0; i < buah.length; i++){
+            baris[i] = buah[i]
+        }
+
+        for (let i = 0; i < buah.length; i++){
+            console.log("========================================");
+            console.log(`Nilai pada pada variabel ke ${i} ${baris[i]}`);
+        }
+    </script>
+</body>
+</html>
